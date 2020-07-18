@@ -1,0 +1,1321 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://tile/Tile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://tile/tileOrange.png" type="Texture" id=2]
+[ext_resource path="res://tile/tileGreen.png" type="Texture" id=3]
+[ext_resource path="res://tile/tileYellow.png" type="Texture" id=4]
+[ext_resource path="res://paddle/Paddle.tscn" type="PackedScene" id=5]
+[ext_resource path="res://ball/Ball.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Level.gd" type="Script" id=7]
+[ext_resource path="res://font/Kenney Bold.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://sound/gameover.ogg" type="AudioStream" id=9]
+[ext_resource path="res://sound/won.ogg" type="AudioStream" id=10]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 2, 512 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 512, 10 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+font_data = ExtResource( 8 )
+
+[node name="Level" type="Node"]
+pause_mode = 2
+script = ExtResource( 7 )
+
+[node name="Red Tiles" type="Node" parent="." groups=[
+"tile",
+]]
+pause_mode = 1
+
+[node name="Tile" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( -3.57628e-07, 32 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile2" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 68, 32 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile3" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 136, 32 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile4" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 204, 32 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile5" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 272, 32 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile6" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 340, 32 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile7" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 408, 32 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile8" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 476, 32 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile9" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 544, 32 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile10" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 612, 32 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile11" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 680, 32 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile12" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 748, 32 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile13" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 816, 32 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile14" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 884, 32 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile15" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 952, 32 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile16" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( -3.57628e-07, 64 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile17" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 68, 64 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile18" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 136, 64 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile19" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 204, 64 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile20" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 272, 64 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile21" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 340, 64 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile22" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 408, 64 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile23" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 476, 64 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile24" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 544, 64 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile25" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 612, 64 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile26" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 680, 64 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile27" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 748, 64 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile28" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 816, 64 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile29" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 884, 64 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Tile30" parent="Red Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 952, 64 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Orange Tiles" type="Node" parent="." groups=[
+"tile",
+]]
+pause_mode = 1
+
+[node name="Tile" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( -3.57628e-07, 96 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile2" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 68, 96 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile2" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile3" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 136, 96 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile3" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile4" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 204, 96 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile4" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile5" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 272, 96 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile5" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile6" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 340, 96 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile6" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile7" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 408, 96 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile7" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile8" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 476, 96 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile8" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile9" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 544, 96 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile9" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile10" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 612, 96 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile10" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile11" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 680, 96 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile11" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile12" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 748, 96 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile12" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile13" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 816, 96 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile13" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile14" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 884, 96 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile14" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile16" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( -3.57628e-07, 128 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile16" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile15" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 952, 96 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile15" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile17" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 68, 128 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile17" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile18" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 136, 128 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile18" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile19" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 204, 128 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile19" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile20" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 272, 128 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile20" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile21" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 340, 128 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile21" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile22" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 408, 128 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile22" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile23" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 476, 128 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile23" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile24" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 544, 128 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile24" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile25" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 612, 128 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile25" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile26" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 680, 128 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile26" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile27" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 748, 128 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile27" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile28" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 816, 128 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile28" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile29" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 884, 128 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile29" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Tile30" parent="Orange Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 952, 128 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Orange Tiles/Tile30" index="0"]
+texture = ExtResource( 2 )
+
+[node name="Green Tiles" type="Node" parent="." groups=[
+"tile",
+]]
+pause_mode = 1
+
+[node name="Tile" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( -3.57628e-07, 160 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile2" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 68, 160 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile2" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile3" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 136, 160 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile3" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile4" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 204, 160 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile4" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile5" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 272, 160 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile5" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile6" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 340, 160 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile6" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile7" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 408, 160 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile7" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile8" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 476, 160 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile8" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile9" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 544, 160 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile9" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile10" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 612, 160 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile10" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile11" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 680, 160 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile11" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile12" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 748, 160 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile12" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile13" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 816, 160 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile13" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile14" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 884, 160 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile14" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile15" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 952, 160 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile15" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile16" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( -3.57628e-07, 192 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile16" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile17" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 68, 192 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile17" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile18" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 136, 192 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile18" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile19" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 204, 192 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile19" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile20" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 272, 192 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile20" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile21" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 340, 192 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile21" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile22" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 408, 192 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile22" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile23" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 476, 192 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile23" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile24" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 544, 192 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile24" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile25" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 612, 192 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile25" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile26" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 680, 192 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile26" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile27" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 748, 192 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile27" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile28" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 816, 192 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile28" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile29" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 884, 192 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile29" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Tile30" parent="Green Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 952, 192 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Green Tiles/Tile30" index="0"]
+texture = ExtResource( 3 )
+
+[node name="Yellow Tiles" type="Node" parent="." groups=[
+"tile",
+]]
+pause_mode = 1
+
+[node name="Tile" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( -3.57628e-07, 224 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile2" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 68, 224 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile2" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile3" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 136, 224 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile3" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile4" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 204, 224 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile4" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile5" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 272, 224 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile5" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile6" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 340, 224 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile6" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile7" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 408, 224 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile7" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile8" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 476, 224 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile8" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile9" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 544, 224 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile9" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile10" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 612, 224 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile10" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile11" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 680, 224 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile11" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile12" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 748, 224 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile12" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile13" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 816, 224 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile13" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile14" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 884, 224 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile14" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile15" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 952, 224 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile15" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile16" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( -3.57628e-07, 256 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile16" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile17" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 68, 256 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile17" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile18" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 136, 256 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile18" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile19" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 204, 256 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile19" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile20" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 272, 256 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile20" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile21" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 340, 256 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile21" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile22" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 408, 256 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile22" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile23" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 476, 256 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile23" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile24" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 544, 256 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile24" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile25" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 612, 256 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile25" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile26" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 680, 256 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile26" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile27" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 748, 256 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile27" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile28" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 816, 256 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile28" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile29" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 884, 256 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile29" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Tile30" parent="Yellow Tiles" groups=[
+"tile",
+] instance=ExtResource( 1 )]
+position = Vector2( 952, 256 )
+scale = Vector2( 0.36, 0.36 )
+
+[node name="Sprite" parent="Yellow Tiles/Tile30" index="0"]
+texture = ExtResource( 4 )
+
+[node name="Paddle" parent="." groups=[
+"paddle",
+] instance=ExtResource( 5 )]
+pause_mode = 1
+position = Vector2( 512, 565 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Ball" parent="." instance=ExtResource( 6 )]
+pause_mode = 1
+position = Vector2( 512, 537 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="LeftWall" type="StaticBody2D" parent="." groups=[
+"wall",
+]]
+pause_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="LeftWall"]
+margin_right = 4.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+position = Vector2( 2, 300 )
+shape = SubResource( 1 )
+
+[node name="RightWall" type="StaticBody2D" parent="." groups=[
+"wall",
+]]
+pause_mode = 1
+position = Vector2( 1020, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="RightWall"]
+margin_right = 4.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+position = Vector2( 2, 300 )
+shape = SubResource( 1 )
+
+[node name="Roof" type="StaticBody2D" parent="." groups=[
+"roof",
+]]
+pause_mode = 1
+position = Vector2( 0, 3 )
+rotation = -1.5708
+
+[node name="ColorRect" type="ColorRect" parent="Roof"]
+margin_right = 4.0
+margin_bottom = 1024.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Roof"]
+position = Vector2( 2, 512 )
+shape = SubResource( 1 )
+
+[node name="GameOverArea" type="Area2D" parent="."]
+pause_mode = 1
+
+[node name="Collision" type="CollisionShape2D" parent="GameOverArea"]
+position = Vector2( 512, 600 )
+shape = SubResource( 2 )
+
+[node name="PlayLabel" type="Label" parent="."]
+margin_top = 344.0
+margin_right = 1020.0
+margin_bottom = 396.0
+custom_fonts/font = SubResource( 3 )
+text = "Press SPACE to play"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameOverLabel" type="Label" parent="."]
+visible = false
+margin_top = 344.0
+margin_right = 1020.0
+margin_bottom = 396.0
+custom_fonts/font = SubResource( 3 )
+text = "GAME OVER"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameOverSound" type="AudioStreamPlayer2D" parent="."]
+pause_mode = 2
+stream = ExtResource( 9 )
+
+[node name="WinSound" type="AudioStreamPlayer2D" parent="."]
+pause_mode = 2
+stream = ExtResource( 10 )
+[connection signal="tile_hit" from="Ball" to="." method="_on_Ball_tile_hit"]
+[connection signal="body_exited" from="GameOverArea" to="." method="_on_game_over"]
+
+[editable path="Orange Tiles/Tile"]
+
+[editable path="Orange Tiles/Tile2"]
+
+[editable path="Orange Tiles/Tile3"]
+
+[editable path="Orange Tiles/Tile4"]
+
+[editable path="Orange Tiles/Tile5"]
+
+[editable path="Orange Tiles/Tile6"]
+
+[editable path="Orange Tiles/Tile7"]
+
+[editable path="Orange Tiles/Tile8"]
+
+[editable path="Orange Tiles/Tile9"]
+
+[editable path="Orange Tiles/Tile10"]
+
+[editable path="Orange Tiles/Tile11"]
+
+[editable path="Orange Tiles/Tile12"]
+
+[editable path="Orange Tiles/Tile13"]
+
+[editable path="Orange Tiles/Tile14"]
+
+[editable path="Orange Tiles/Tile16"]
+
+[editable path="Orange Tiles/Tile15"]
+
+[editable path="Orange Tiles/Tile17"]
+
+[editable path="Orange Tiles/Tile18"]
+
+[editable path="Orange Tiles/Tile19"]
+
+[editable path="Orange Tiles/Tile20"]
+
+[editable path="Orange Tiles/Tile21"]
+
+[editable path="Orange Tiles/Tile22"]
+
+[editable path="Orange Tiles/Tile23"]
+
+[editable path="Orange Tiles/Tile24"]
+
+[editable path="Orange Tiles/Tile25"]
+
+[editable path="Orange Tiles/Tile26"]
+
+[editable path="Orange Tiles/Tile27"]
+
+[editable path="Orange Tiles/Tile28"]
+
+[editable path="Orange Tiles/Tile29"]
+
+[editable path="Orange Tiles/Tile30"]
+
+[editable path="Green Tiles/Tile"]
+
+[editable path="Green Tiles/Tile2"]
+
+[editable path="Green Tiles/Tile3"]
+
+[editable path="Green Tiles/Tile4"]
+
+[editable path="Green Tiles/Tile5"]
+
+[editable path="Green Tiles/Tile6"]
+
+[editable path="Green Tiles/Tile7"]
+
+[editable path="Green Tiles/Tile8"]
+
+[editable path="Green Tiles/Tile9"]
+
+[editable path="Green Tiles/Tile10"]
+
+[editable path="Green Tiles/Tile11"]
+
+[editable path="Green Tiles/Tile12"]
+
+[editable path="Green Tiles/Tile13"]
+
+[editable path="Green Tiles/Tile14"]
+
+[editable path="Green Tiles/Tile15"]
+
+[editable path="Green Tiles/Tile16"]
+
+[editable path="Green Tiles/Tile17"]
+
+[editable path="Green Tiles/Tile18"]
+
+[editable path="Green Tiles/Tile19"]
+
+[editable path="Green Tiles/Tile20"]
+
+[editable path="Green Tiles/Tile21"]
+
+[editable path="Green Tiles/Tile22"]
+
+[editable path="Green Tiles/Tile23"]
+
+[editable path="Green Tiles/Tile24"]
+
+[editable path="Green Tiles/Tile25"]
+
+[editable path="Green Tiles/Tile26"]
+
+[editable path="Green Tiles/Tile27"]
+
+[editable path="Green Tiles/Tile28"]
+
+[editable path="Green Tiles/Tile29"]
+
+[editable path="Green Tiles/Tile30"]
+
+[editable path="Yellow Tiles/Tile"]
+
+[editable path="Yellow Tiles/Tile2"]
+
+[editable path="Yellow Tiles/Tile3"]
+
+[editable path="Yellow Tiles/Tile4"]
+
+[editable path="Yellow Tiles/Tile5"]
+
+[editable path="Yellow Tiles/Tile6"]
+
+[editable path="Yellow Tiles/Tile7"]
+
+[editable path="Yellow Tiles/Tile8"]
+
+[editable path="Yellow Tiles/Tile9"]
+
+[editable path="Yellow Tiles/Tile10"]
+
+[editable path="Yellow Tiles/Tile11"]
+
+[editable path="Yellow Tiles/Tile12"]
+
+[editable path="Yellow Tiles/Tile13"]
+
+[editable path="Yellow Tiles/Tile14"]
+
+[editable path="Yellow Tiles/Tile15"]
+
+[editable path="Yellow Tiles/Tile16"]
+
+[editable path="Yellow Tiles/Tile17"]
+
+[editable path="Yellow Tiles/Tile18"]
+
+[editable path="Yellow Tiles/Tile19"]
+
+[editable path="Yellow Tiles/Tile20"]
+
+[editable path="Yellow Tiles/Tile21"]
+
+[editable path="Yellow Tiles/Tile22"]
+
+[editable path="Yellow Tiles/Tile23"]
+
+[editable path="Yellow Tiles/Tile24"]
+
+[editable path="Yellow Tiles/Tile25"]
+
+[editable path="Yellow Tiles/Tile26"]
+
+[editable path="Yellow Tiles/Tile27"]
+
+[editable path="Yellow Tiles/Tile28"]
+
+[editable path="Yellow Tiles/Tile29"]
+
+[editable path="Yellow Tiles/Tile30"]
